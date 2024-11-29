@@ -1,0 +1,136 @@
+.editar-perfil-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.editar-perfil-container h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+
+.editar-perfil-form {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #f0a500;
+  box-shadow: 0 0 10px rgba(240, 165, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.editar-perfil-button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.editar-perfil-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #f0a500, #f5b730);
+  color: #000000;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.editar-perfil-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: rgba(244, 67, 54, 0.1);
+  color: #ff6b6b;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(244, 67, 54, 0.3);
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.success-message {
+  background: rgba(76, 175, 80, 0.1);
+  color: #81c784;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .editar-perfil-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .editar-perfil-form {
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .editar-perfil-button {
+    padding: 12px;
+  }
+}
+  

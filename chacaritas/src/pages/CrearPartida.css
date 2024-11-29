@@ -1,0 +1,153 @@
+.crear-partida-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+
+
+}
+
+.crear-partida-content h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    
+}
+
+.form-group {
+    margin: 30px 0;
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #f0a500;
+    box-shadow: 0 0 10px rgba(240, 165, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.select-jugadores {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.select-jugadores:focus {
+    outline: none;
+    border-color: #f0a500;
+    box-shadow: 0 0 10px rgba(240, 165, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.select-jugadores option {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    width: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.player-card p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.start-game {
+    background: linear-gradient(45deg, #f0a500, #f5b730);
+    color: #000000;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(240, 165, 0, 0.3);
+}
+
+.start-game:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(240, 165, 0, 0.4);
+    background: linear-gradient(45deg, #f5b730, #f0a500);
+}
+
+.start-game:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+    .crear-partida-content {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .form-group {
+        width: 90%;
+    }
+
+    .player-card {
+        width: 160px;
+    }
+}
+  

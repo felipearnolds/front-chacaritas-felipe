@@ -1,0 +1,89 @@
+.board-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 4px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.tile {
+  aspect-ratio: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 4px;
+  min-height: 60px;
+  transition: transform 0.2s;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.tile-number {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 12px;
+  color: #333;
+}
+
+.players-container {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
+}
+
+.player-piece {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Estilos específicos para tipos de casillas */
+.tile.reward { 
+  background-color: #FFD700; 
+  background-image: linear-gradient(45deg, #FFD700, #FFA500);
+}
+.tile.penalty { 
+  background-color: #FF6B6B;
+  background-image: linear-gradient(45deg, #FF6B6B, #FF4444);
+}
+.tile.power { 
+  background-color: #4DABF7;
+  background-image: linear-gradient(45deg, #4DABF7, #228BE6);
+}
+.tile.finish { 
+  background-color: #000;
+  background-image: linear-gradient(45deg, #000, #333);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tile.finish::after {
+  content: "META";
+  position: absolute;
+  color: white;
+  font-size: 14px;
+} 
